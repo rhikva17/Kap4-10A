@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="hhlogo.png">
+  <title>Helsehjørnet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+
+.header {
+  background-color: #B069BD;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom-style:solid;
+  
+}
+
+.header img {
+  width: 150px;
+  height: auto;
+  margin: 0; /* Remove margin */
+}
+
+    .header h1 {
+      font-size: 35px;
+      color: white;
+    }
+
+ 
+
+    /* Create three unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 10px;
+    }
+
+.row {
+  display: flex;
+  justify-content: center;
+  background-image: url("sky.jpeg");
+}
+
+.column.side {
+  width: 40%;
+}
+
+.column.middle, .column.middle2, .column.middle3 {
+  width: 20%;
+  background-color: #E6E6FA;
+  padding: 10px;
+  border-color: black;
+}
+
+.column.middle {
+  border-left: solid;
+}
+
+.column.middle3 {
+  border-right: solid;
+}
+    
+    .column.middle.full {
+      width: 100%;
+      background-color: #E6E6FA;
+      float: right;
+      padding: 10px;
+      border:solid;
+      border-color:black;
+      
+    }
+
+
+    /* Clear floats after the columns */
+    .row2::after {
+      content: "";
+      display: table;
+      clear: both;
+      background-color: #E6E6FA;
+    }
+    
+
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      max-width: 100%; /* Maksimal bredde */
+      border-radius: 25px;
+    }
+
+ .card.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column.side, .column.middle, .column.middle2, .column.middle3 {
+        width: 100%;
+      }
+    }
+
+.footer {
+  background-color: #E2B3FF;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top:solid;
+}
+
+.footer .row2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed */
+}
+
+.foot.column {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+    .border {
+      border-right-style: solid;
+    }
+    
+.button {
+  border: solid;
+  border-radius: 25px;
+  color: black;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.button:hover {
+  background-color: #B069BD;
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="nettside.html"><img src="hhlogo.png" alt="rhina" ></a>
+    
+  </div>
+
+ 
+
+
+  
+<div class="row2">
+<div class="column middle full">
+<div class="card image">
+      <h1>HelseHjørnet Podcast</h1>
+<video width="640" height="480" controls>
+  <source src="rhina2.mp4" type="video/mp4">
+</video>
+</div>
+
+  </div>
+  </div>
+    
+    
+
+<div class="footer" style="color:black">
+  <h2>Helsehjørnet</h2>
+  <pre style="color:black">     _______________________________________________________________________________________________________________________________________________________</pre>
+  <div class="row2">
+    <div class="foot column">
+      <h3>Kontaktinfo:</h3>
+      <p>helsehjørnet@gmail.com</p>
+      <p>+47 973 45 376</p>
+    </div>
+    <div class="foot column">
+      <h3>Følg oss:</h3>
+      <p><a href="instagram.com">Instagram</a></p>
+      <p><a href="facebook.com">Facebook</a></p>
+      <p><a href="spotify.com">Spotify</a></p>
+    </div>
+    <div class="foot column">
+      <h3>Retninglinjer:</h3>
+      <p>Bærekraft</p>
+      <p>Økonomi</p>
+      <p>Personvern</p>
+    </div>
+    <div class="foot column">
+      <h3>Informasjon:</h3>
+      <p>Bli medlem</p>
+      <p>Våre sponsorar</p>
+      <p>Personvern</p>
+    </div>
+  </div>
+  <pre style="color:black">     _______________________________________________________________________________________________________________________________________________________</pre>
+</div>
+
+</body>
+</html>
+
+

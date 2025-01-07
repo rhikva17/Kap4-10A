@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="hhlogo.png">
+  <title>Helsehjørnet</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+    }
+
+.header {
+  background-color: #B069BD;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom-style:solid;
+  
+}
+
+.header img {
+  width: 150px;
+  height: auto;
+  margin: 0; /* Remove margin */
+}
+
+    .header h1 {
+      font-size: 35px;
+      color: white;
+    }
+
+ 
+
+    /* Create three unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 10px;
+    }
+
+.row {
+  display: flex;
+  justify-content: center;
+  background-image: url("sky.jpeg");
+}
+
+.column.side {
+  width: 40%;
+}
+
+.column.middle, .column.middle2, .column.middle3 {
+  width: 20%;
+  background-color: #E6E6FA;
+  padding: 10px;
+  border-color: black;
+}
+
+.column.middle {
+  border-left: solid;
+}
+
+.column.middle3 {
+  border-right: solid;
+}
+    
+    .column.middle.full {
+      width: 100%;
+      background-color: #E6E6FA;
+      float: right;
+      padding: 10px;
+      border:solid;
+      border-color:black;
+      
+    }
+
+
+    /* Clear floats after the columns */
+    .row2::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      max-width: 100%; /* Maksimal bredde */
+      border-radius: 25px;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column.side, .column.middle, .column.middle2, .column.middle3 {
+        width: 100%;
+      }
+    }
+
+.footer {
+  background-color: #E2B3FF;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.footer .row2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust this value as needed */
+}
+
+.foot.column {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+    .border {
+      border-right-style: solid;
+    }
+    
+.button {
+  border: solid;
+  border-radius: 25px;
+  color: black;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.button:hover {
+  background-color: #B069BD;
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="nettside.html"><img src="hhlogo.png" alt="rhina" ></a>
+    
+  </div>
+
+ 
+
+  <div class="row">
+
+
+      <div class="column middle2">
+      <div class="card">
+        <a href="#id1"><button class="button"><h4>Fysisk Helse</h4></button></a>
+      </div>
+      <div class="card">
+        <a href="#id1"><button class="button"><h4>Psykisk Helse</h4></button></a>
+      </div>
+    <div class="card">
+        <a href="#id3"><button class="button"><pre><h4>  Søvn  </h4></pre></button></a>
+      </div>
+      
+    </div>
+    
+
+
+
+  
+  <div class="column middle2">
+    <div class="card">
+        <a href="#id4"><button class="button"><h4>Psykisk Lidning</h4></button></a>
+      </div>
+      <div class="card">
+        <a href="podcast.html"><button class="button" style="background-image: url('oliver%20(3).png');"><h4>Podcasten vår</h4></button></a>
+      </div>
+      <div class="card">
+        <a href="#id5"><button class="button"><h4>Næringsstoff</h4></button></a>
+      </div>
+
+    </div>
+
+    <div class="column middle2">
+    <div class="card">
+        <a href="#id2"><button class="button"><h4>Samanheng</h4></button></a>
+      </div>
+      <div class="card">
+        <a href="#id6"><button class="button"><h4>Varetekt av Helsa</h4></button></a>
+      </div>
+      <div class="card">
+        <a href="#id7"><button class="button"><h4>Konsekvensar</h4></button></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row2">
+    <div class="column middle full">
+    <div class="card" id="id1">
+      <h3>Fysisk Helse</h3>
+        <p>Fysisk helse refererer til kroppens tilstand og evne til å fungere optimalt uten smerter, sykdommer eller skader. Den omfatter viktige faktorer som regelmessig trening, et balansert kosthold og tilstrekkelig søvn. Fysisk aktivitet styrker musklene, øker energinivået og bidrar til bedre humør ved å frigjøre kjemiske stoffer i hjernen som forbedrer den psykiske helsen. Et sunt kosthold, rikt på frukt, grønnsaker og næringsstoffer, gir kroppen de nødvendige næringsstoffene for å opprettholde god helse. I tillegg er god søvn avgjørende for å støtte både fysisk restitusjon og mental velvære. Samlet sett er god fysisk helse en viktig byggestein for et godt liv og en positiv livskvalitet.</p> <img src="f.jpeg" alt="fysisk helse">
+      </div>
+    <div class="card" id="id2">
+      <h3>Psykisk Helse</h3>
+        <p>Psykisk helse handlar om korleis vi føler oss, tenkjer og kontrollerer følelsane våre. Det dreier seg ikkje om å ha det godt heile tida, men om å kunne finne glede i aktivitetar og meistre dei utfordringane ein møter i kvardagen. God psykisk helse inneber evna til å handtere ulike situasjonar, ha gode relasjonar til familie og venner, og kjenne seg trygg og glad. Det betyr ikkje at ein ikkje kan oppleve vanskelege periodar, men at ein klarer å håndtere dei på ein konstruktiv måte. Sosiale relasjonar spelar ei sentral rolle, då gode venner og familie kan hjelpe oss med å føle oss trygge og støtta. Målet er ikkje perfeksjon, men å utvikle robustheit og evne til å takle livets opp- og nedturar.</p> <img src="p.png" alt="psykisk helse">
+      </div>
+    <div class="card" id="id3">
+      <h3>Samanheng</h3>
+        <p>Samanhengen mellom fysisk og psykisk helse er sterk og går begge vegar. Fysisk aktivitet har ein direkte positiv effekt på vår mentale tilstand og kan bidra til å forbetre både fysisk og psykisk helse. Her er nokre viktige punkt:
+<li>Regelmessig fysisk aktivitet kan redusere symptom på angst og depresjon.</li>
+<li>Trening fremjar god helse, gir betre humør og søvn, meir energi og reduserer stress.</li>
+<li>Fysisk aktivitet kan vere ei kjelde til glede, meistring og positive opplevingar.</li>
+<li>Det kan gi betre sjølvbilete og sjølvtillit, samt betre livskvalitet.</li>
+<li>Fysisk aktivitet kan forbetre kognitiv funksjon og redusere risikoen for demens.</li>
+<br></br>
+Forsking viser at fysisk aktivitet har ein middels effekt på depresjon, angst og "psykiske plager" samanlikna med vanleg behandling. Dette gjeld for eit breitt spekter av vaksne, inkludert den generelle befolkninga, personar med diagnostiserte psykiske lidingar, og personar med kronisk sjukdom.
+Det er viktig å merke seg at all fysisk aktivitet tel, også aktivitet av kort varigheit og lett intensitet. For å oppnå best mogleg effekt, bør ein finne ein balanse mellom aktivitet og kvile, og gradvis auke aktivitetsnivået og intensiteten. </p> <img src="samanheng.jpeg" alt="syk man">
+      </div>
+      
+    <div class="card" id="id4">
+      <h3>Søvn</h3>
+        <p> Søvn er en essensiell del av vår helse og velvære, og den spiller en kritisk rolle for både fysisk og psykisk helse. God søvn er nødvendig for å opprettholde kroppens funksjoner, inkludert immunforsvaret, hormonbalansen og kognitive prosesser som hukommelse og læring. Mangel på søvn kan føre til alvorlige helseproblemer, som økt risiko for diabetes, hjertesykdom, og psykiske lidelser som depresjon og angst. Kronisk søvnmangel svekker ikke bare humøret og energinivået, men kan også forverre eksisterende helseproblemer. Det anbefales at voksne får mellom 7-9 timer søvn per natt for å sikre optimal helse og livskvalitet. Å prioritere god søvn er derfor avgjørende for å fungere godt i hverdagen og opprettholde en sunn livsstil.
+        </p> <img src="sove.jpeg" alt="syk man" style="width:15%">
+      </div>
+      
+    <div class="card" id="id5">
+      <h3>Psykisk Liding</h3>
+        <p> Psykisk lidelse er sjukdommer og tilstander som negativt påverkar tankane og kjenslene våre. Dette kan vere diagnosar som ADHD, angst og depresjon. Ein psykisk lidelse kjenneteiknas ved at ein sjeldan har det bra og har vanskeleg for å handtere kvardaglege utfordringar. Det betyr ikkje at ein ikkje kan ha gode periodar, men at dei psykiske utfordringane vedvarande påverkar livskvaliteten. Slike lidingar kan gjere det vanskeleg å meistre sosiale relasjonar, utdanning eller arbeid, og kan ha stor innverknad på personens totale livssituasjon. Det er viktig å understreke at psykiske lidingar er behandlingsbare, og at profesjonell hjelp kan bidra til å forbetre livskvaliteten betydeleg.
+        </p> <img src="lidning.png" alt="syk man">
+      </div>
+    <div class="card" id="id6">
+      <h3>Næringstoff</h3>
+        <p>Næringsstoff er essensielle komponentar i maten vi et, og dei spelar ei avgjerande rolle i å oppretthalde god helse. Dei viktigaste næringsstoffa inkluderer karbohydrater, proteiner, fett, vitaminer og mineraler. Karbohydrater gir energi, medan proteiner er nødvendige for vekst og reparasjon av vev. Fett er også ein viktig energikjelde og bidrar til opptak av fettløselige vitaminer. Vitaminer og mineraler støttar ulike kroppslige funksjonar, inkludert immunforsvaret, stoffskiftet og beinhelse. Å ete eit variert kosthold rikt på frukt, grønnsaker og næringsrik mat sikrar at kroppen får dei nødvendige næringsstoffa for å fungere optimalt. God ernæring er ikkje berre viktig for fysisk helse, men har også ein positiv innverknad på den psykiske helsen, ved å bidra til betre humør og energinivå.
+        <br>
+        <img src="mat.jpeg" alt="syk man"></p>
+        
+      </div>
+    <div class="card" id="id7">
+      <h3>Varetekt av helse</h3>
+        <p>Å ta vare på helsa handlar om å vere bevisst på både fysiske og psykiske behov. Dette inkluderer regelmessig fysisk aktivitet, sunt kosthold, tilstrekkeleg søvn og mentalt overskudd. Viktige strategiar er å lytte til kroppens signal, ikkje presse seg sjølv for hardt, og prioritere sjølvomsorg. Det betyr å gjere aktivitetar som gir glede og avslapping, som å lese ei bok, teikne, høyre på musikk eller meditere. Sosiale relasjonar er også sentrale - det å tilbringe tid med personar ein er glad i, vere bevisst på skjermbruk og snakke opent om vanskelege tema. Hovudprinsippet er å behandle seg sjølv med same omsorg og respekt som ein ville gjort med ein god ven. Å ta pausar, erkjenne eigne grenser og finne ein balanse mellom aktivitet og kvile er avgjerande for å oppretthalde god helse.</p>
+        <p> <h4>Tips til korleis å ta vare på den fysiske og psykiske helsa:</h4>
+        Fysisk:
+
+<li>Få nok søvn</li>
+
+<li>Ha eit godt kosthald</li>
+
+<li>Trene og bruke kroppen</li>
+
+<li>Et nærerik mat som for eksempel: frukt og grønsaker.</li>
+<br>
+
+Psykisk:
+
+<li>Ha nokon å prate med</li>
+
+<li>Gjere noko du liker og interesserer deg for</li>
+
+<li>Søk støtte hos venner og familie</li>
+
+<li>Slappe av og ta pause iblant</li>
+<br>
+<img src="klem.jpeg" alt="syk man"></p>
+
+      </div>
+    <div class="card" id="id8">
+      <h3>Konsekvensar</h3>
+        <p>Å ikkje ta vare på helsa si kan føre til alvorlege konsekvensar for både kropp og sinn. Fysisk kan det resultere i trøttheit, slappheit og redusert energi, noko som gjer det vanskeleg å utføre daglegdagse oppgåver. Ein blir også meir utsatt for sjukdommar som influensa på grunn av svekka immunforsvar. Psykisk kan det føre til lav sjølvkjensle, manglande evne til meistring og redusert motivasjon, særleg i skule- eller jobbsamanheng. Sosialt kan det føre til isolasjon og einsemd, då ein manglar overskudd til å vere med venner eller delta i aktivitetar ein vanlegvis likar. Dette kan igjen forsterke negative kjensler og stress. Samla sett kan forsømming av helsa føre til ein negativ spiral som påverkar livskvaliteten på mange områder, både fysisk, psykisk og sosialt.</p>
+        
+        <img src="konsekvenser.jpeg" alt="syk man">
+      </div>
+      
+        <div class="card">
+      <h3>Kjeldeliste</h3>
+      <li><a href="https://sunkost.no/rad-informasjon/sovn-overskudd/derfor-er-det-viktig-a-sove-godt%23:~:text=God%2520s%C3%B8vn%2520gjenoppbygger%2520vev%2520og%2520organer&text=Immunforsvaret%2520vedlikeholdes%2520ogs%C3%A5%2520n%C3%A5r%2520dusom%2520konsentrasjon%252C%2520hukommelse%2520og%2520l%C3%A6ring">sunkost</a></li>
+      <li><a href="https://www.fhi.no/ps/livskvalitet-og-trivsel/hverdagsgledens-fem-kunnskapsbaserte-grep-for-god-livskvalitet/">FHI</a></li>
+      <li><a href="https://www.helsenorge.no/psykisk-helse/psykisk-helse-og-fysisk-aktivitet/">helsenorge</a></li>
+      <li><a href="https://sykepleien.no/forskning/2011/06/tiltak-oke-fysisk-aktivitet-i-befolkningen">sykepleien</a></li>
+        
+
+      </div>
+      
+    
+    
+    </div>
+  </div>
+    
+    
+
+<div class="footer" style="color:black">
+  <h2>Helsehjørnet</h2>
+  <pre style="color:black">     _______________________________________________________________________________________________________________________________________________________</pre>
+  <div class="row2">
+    <div class="foot column">
+      <h3>Kontaktinfo:</h3>
+      <p>helsehjørnet@gmail.com</p>
+      <p>+47 316 4424 4901</p>
+    </div>
+    <div class="foot column">
+      <h3>Følg oss:</h3>
+      <p><a href="https://www.instagram.com/">Instagram</a></p>
+      <p><a href="https://www.facebook.com/">Facebook</a></p>
+      <p><a href="https://www.spotify.com/">Spotify</a></p>
+    </div>
+    <div class="foot column">
+      <h3>Retninglinjer:</h3>
+      <p>Bærekraft</p>
+      <p>Økonomi</p>
+      <p>Personvern</p>
+    </div>
+    <div class="foot column">
+      <h3>Informasjon:</h3>
+      <p>Bli medlem</p>
+      <p>Våre sponsorar</p>
+      <p>Personvern</p>
+    </div>
+  </div>
+  <pre style="color:black">     _______________________________________________________________________________________________________________________________________________________</pre>
+</div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
